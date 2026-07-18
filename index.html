@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>So The Story Is Told - Turn Your Story Into Animated Reels</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>So The Story Is Told</title>
+  <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
   <header>
-    <h1>So The Story Is Told</h1>
-    <p>Turn your personal stories into beautiful illustrated animated reels</p>
+    <nav>
+      <div class="logo">So The Story Is Told</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="story-form">
-      <h2>Tell Your Story</h2>
-      <form id="storyForm">
-        <textarea id="userStory" rows="6" placeholder="Write your short story or message here... (e.g. 'Dear Sarah, I'm so proud of you for...')"></textarea>
-        
-        <div class="options">
-          <input type="text" id="recipient" placeholder="Recipient's name (optional)">
-          <select id="occasion">
-            <option value="">Select Occasion</option>
-            <option value="birthday">Birthday</option>
-            <option value="graduation">Graduation</option>
-            <option value="love">Love / Anniversary</option>
-            <option value="encouragement">Encouragement</option>
-            <option value="thankyou">Thank You</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <button type="submit">Generate Storyboard & Reel →</button>
-      </form>
+    <section class="hero">
+      <h1>So The Story Is Told</h1>
+      <p>Every story deserves to be heard.</p>
+      <a href="#" class="btn">Explore Stories</a>
     </section>
 
-    <div id="preview" class="preview-area" style="display:none;">
-      <h3>Your Storyboard Preview</h3>
-      <div id="scenes"></div>
-      <button id="generateVideo">Generate Full Animated Reel</button>
-    </div>
+    <section class="content">
+      <div class="card">
+        <h2>Featured Story</h2>
+        <p>Your latest story goes here. Replace this with your content.</p>
+      </div>
+      <div class="card">
+        <h2>Recent Posts</h2>
+        <p>A list of recent posts will appear here.</p>
+      </div>
+      <div class="card">
+        <h2>About</h2>
+        <p>Tell your readers about yourself and your stories.</p>
+      </div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2026 So The Story Is Told. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
