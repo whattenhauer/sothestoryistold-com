@@ -1,0 +1,6 @@
+name = "sothestoryistold-com"
+compatibility_date = "2026-07-18"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
