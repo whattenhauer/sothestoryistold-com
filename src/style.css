@@ -1,144 +1,76 @@
 :root {
-  --navy: #001f3f;
-  --navy-light: #003366;
-  --teal: #008080;
-  --teal-light: #00b3b3;
+  --navy: #0a2540;
+  --teal: #00b4a6;
+  --gold: #d4af37;
   --white: #ffffff;
-  --off-white: #f4f7fa;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: var(--off-white);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f4f7fa;
   color: var(--navy);
-  line-height: 1.6;
 }
 
-/* Header & Navigation */
 header {
-  background: var(--navy);
-  color: var(--white);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--teal-light);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.nav-links a {
-  color: var(--white);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: var(--teal-light);
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
-  color: var(--white);
+  background: linear-gradient(var(--navy), #1e3a5f);
+  color: white;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 50px 20px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.logo h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--gold);
+  text-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+.logo p {
+  font-size: 1.4rem;
+  margin: 8px 0 0 0;
+  color: white;
 }
 
-.btn {
-  display: inline-block;
+.story-form {
+  max-width: 720px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+textarea, input, select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row input {
+  flex: 1;
+}
+
+button {
   background: var(--teal);
-  color: var(--white);
-  padding: 0.75rem 2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
+  color: white;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.btn:hover {
-  background: var(--teal-light);
-}
-
-/* Content Cards */
-.content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-}
-
-.card {
-  background: var(--white);
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 31, 63, 0.1);
-  border-top: 4px solid var(--teal);
-}
-
-.card h2 {
-  color: var(--navy);
-  margin-bottom: 1rem;
-}
-
-.card p {
-  color: #555;
-}
-
-/* Footer */
-footer {
-  background: var(--navy);
-  color: var(--white);
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 1rem;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .content {
-    grid-template-columns: 1fr;
-  }
+button:hover {
+  background: #00857a;
 }
