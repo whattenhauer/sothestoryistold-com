@@ -1,6 +1,15 @@
-name = "sothestoryistold-com"
-compatibility_date = "2026-07-18"
+name = "sothestoryistold-media-api"
+compatibility_date = "2026-07-28"
+main = "src/index.js"
 
-[assets]
-directory = "./dist"
-binding = "ASSETS"
+# Public reads: media.sothestoryistold.com → R2 custom domain (configured in dashboard, not here)
+# Writes: this Worker handles add/modify/move/archive/delete via R2 binding
+
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "sothestoryistold-r2-1"
+
+# Optional: restrict CORS origins via environment variable
+[vars]
+ALLOWED_ORIGIN = "https://sothestoryistold.com"
+
