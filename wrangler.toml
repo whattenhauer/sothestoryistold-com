@@ -13,3 +13,5 @@ bucket_name = "sothestoryistold-r2-1"
 [vars]
 ALLOWED_ORIGIN = "https://sothestoryistold.com"
 
+[assets]
+directory = "./src"   # or wherever your static files are
