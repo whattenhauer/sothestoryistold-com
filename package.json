@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.47.0",
-    "vite": "^6.0.0",
+    "vite": "^6.4.5",
     "wrangler": "^4.114.0"
   },
   "allowScripts": {
